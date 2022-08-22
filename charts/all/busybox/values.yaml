@@ -1,0 +1,5 @@
+deployment:
+  image: "quay.io/sughosh/busybox"
+  tag: "latest"
+  replicas: 2
+name: busybox

@@ -3,13 +3,15 @@ clusterGroup:
   isHubCluster: true
   # Note: setting this to true stores the vault unseal keys inside a cluster secret and
   # is fundamentally insecure
-  insecureUnsealVaultInsideCluster: false
+  insecureUnsealVaultInsideCluster: true
 
   namespaces:
   - config-demo
+  - busybox
 
   projects:
   - config-demo
+  - busybox
 
   applications:
     config-demo:
@@ -17,3 +19,9 @@ clusterGroup:
       namespace: config-demo
       project: config-demo
       path: charts/all/config-demo
+
+    busybox:
+      name: busybox
+      namespace: busybox
+      project: busybox
+      path: charts/all/busybox
