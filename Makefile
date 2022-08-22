@@ -15,7 +15,7 @@ install: deploy ## installs the pattern, inits the vault and loads the secrets
 	else \
 	  make vault-init; \
 	fi
-	make load-secrets
+	#make load-secrets
 	echo "Installed"
 
 common-test:
