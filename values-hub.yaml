@@ -6,20 +6,12 @@ clusterGroup:
   insecureUnsealVaultInsideCluster: true
 
   namespaces:
-  - config-demo
   - busybox
 
   projects:
-  - config-demo
   - busybox
 
   applications:
-    config-demo:
-      name: config-demo
-      namespace: config-demo
-      project: config-demo
-      path: charts/all/config-demo
-
     busybox:
       name: busybox
       namespace: busybox
